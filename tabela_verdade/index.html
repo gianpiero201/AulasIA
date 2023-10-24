@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conectivos Lógicos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      select,
+      table {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conectivos Lógicos</h1>
+
+    <label for="conectivo">Escolha um conectivo:</label>
+    <select id="conectivo" onchange="gerarTabela()">
+      <option value="NOT">NOT</option>
+      <option value="AND">AND</option>
+      <option value="OR">OR</option>
+      <option value="XOR">XOR</option>
+      <option value="BICONDICIONAL">BICONDICIONAL</option>
+      <option value="IMPLICACAO">IMPLICAÇÃO</option>
+    </select>
+
+    <div id="tabela-verdade"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
